@@ -1,21 +1,6 @@
-<?xml version="1.0"?>
+<?xml version="1.0" ?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <type name="Magento\Cms\Model\Wysiwyg\Images\Storage">
-        <arguments>
-            <argument name="extensions" xsi:type="array">
-                <item name="allowed" xsi:type="array">
-                    <item name="doc" xsi:type="number">1</item>
-                    <item name="docm" xsi:type="number">1</item>
-                    <item name="docx" xsi:type="number">1</item>
-                    <item name="csv" xsi:type="number">1</item>
-                    <item name="xml" xsi:type="number">1</item>
-                    <item name="xls" xsi:type="number">1</item>
-                    <item name="xlsx" xsi:type="number">1</item>
-                    <item name="pdf" xsi:type="number">1</item>
-                    <item name="tar" xsi:type="number">1</item>
-                    <item name="zip" xsi:type="number">1</item>
-                </item>
-            </argument>
-        </arguments>
-    </type>
+	<type name="Magento\Cms\Model\Wysiwyg\Images\Storage">
+		<plugin disabled="false" name="Experius_WysiwygDownloads_Plugin_Magento_Cms_Model_Wysiwyg_Images_Storage" sortOrder="10" type="Experius\WysiwygDownloads\Plugin\Magento\Cms\Model\Wysiwyg\Images\Storage"/>
+	</type>
 </config>

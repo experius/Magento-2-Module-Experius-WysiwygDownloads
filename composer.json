@@ -1,5 +1,5 @@
 {
-    "name": "experius/wysiwygdownloads",
+    "name": "experius/module-wysiwygdownloads",
     "description": "This module makes it possible to upload different filetypes inside the WYSIWYG-editor. Extra filetypes are Word (doc, docm, docx), Excel (csv, xml, xls, xlsx), PDF (pdf), Compressed Folder (zip, tar)",
     "authors": [
         {
@@ -8,7 +8,9 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "experius/module-core": "1.0.*"
+    },
     "autoload": {
         "files": [
             "registration.php"
