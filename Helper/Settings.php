@@ -16,7 +16,8 @@ class Settings extends \Experius\Core\Helper\Settings
 		foreach($settings as $setting){
 			$filetypes[] =  $setting['extension'];
 		}
-		return $filetypes;
+		$defaultFiletypes = array('doc','docm','docx','csv','xml','xls','xlsx','pdf','zip','tar');
+		return array_merge($filetypes,$defaultFiletypes);
 	}
    
 }

@@ -2,7 +2,7 @@
 
 This module makes it possible to upload different filetypes inside the WYSIWYG-editor. 
 
-Example of filetypes that can be configured:
+The following filetypes are available by default and it is possible to add extra filetypes to the allowed filetypes in the configuration of the module:
  
  - Word (doc, docm, docx)
  - Excel (csv, xml, xls, xlsx)
