@@ -2,7 +2,7 @@
 
 This module makes it possible to upload different filetypes inside the WYSIWYG-editor. 
 
-The following filetypes are available by default and it is possible to add extra filetypes to the allowed filetypes in the configuration of the module:
+The following filetypes are available by default and it is possible to add extra filetypes to the allowed filetypes in the configuration of the module (General > Content Management > WYSIWYG Options > Extra Allowed Filetypes):
  
  - Word (doc, docm, docx)
  - Excel (csv, xml, xls, xlsx)
