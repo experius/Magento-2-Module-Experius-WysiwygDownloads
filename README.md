@@ -1,4 +1,4 @@
-# Mage2 Module Experius WysiwygDownloads
+# Magento 2 Module Experius WysiwygDownloads
 
 This module makes it possible to upload different filetypes inside the WYSIWYG-editor. 
 
