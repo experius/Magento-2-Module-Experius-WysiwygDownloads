@@ -1,9 +1,21 @@
 <?php
-
+/**
+ * This module makes it possible to upload different filetypes inside the WYSIWYG-editor. Extra filetypes are Word (doc, docm, docx), Excel (csv, xml, xls, xlsx), PDF (pdf), Compressed Folder (zip, tar)
+ * Copyright (C) 2016  
+ * 
+ * This file included in Experius/WysiwygDownloads is licensed under OSL 3.0
+ * 
+ * http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * Please see LICENSE.txt for the full text of the OSL 3.0 license
+ */
+ 
 namespace Experius\WysiwygDownloads\Helper;
 
 use Magento\Framework\App\Helper\Context;
 
+/**
+ * Class Settings
+ */
 class Settings extends \Magento\Framework\App\Helper\AbstractHelper
 {
 
