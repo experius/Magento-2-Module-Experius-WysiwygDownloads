@@ -3,4 +3,5 @@
 	<type name="Magento\Cms\Model\Wysiwyg\Images\Storage">
 		<plugin disabled="false" name="Experius_WysiwygDownloads_Plugin_Magento_Cms_Model_Wysiwyg_Images_Storage" sortOrder="10" type="Experius\WysiwygDownloads\Plugin\Magento\Cms\Model\Wysiwyg\Images\Storage"/>
 	</type>
+	<preference for="Magento\Framework\Image\Adapter\Gd2" type="Experius\WysiwygDownloads\Image\Adapter\Gd2" />
 </config>
