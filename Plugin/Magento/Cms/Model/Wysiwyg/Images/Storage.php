@@ -38,9 +38,6 @@ class Storage {
 		\Magento\Cms\Model\Wysiwyg\Images\Storage $subject,
 		$result
 	){
-		if($this->_type == 'file'){
-			return array_merge($result,$this->_settings->getExtraFiletypes());
-		}
-		return $result;
+        return array_merge($result,$this->_settings->getExtraFiletypes());
 	}
 }
