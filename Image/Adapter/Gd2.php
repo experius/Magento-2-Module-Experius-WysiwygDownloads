@@ -32,7 +32,7 @@ class Gd2 extends \Magento\Framework\Image\Adapter\Gd2
     public function open($filename)
     {
         $pathInfo = pathinfo($filename);
-        if (!in_array($pathInfo['extension'], $this->settings->getExtraFiletypes())) {
+        if (!key_exists('extension', $pathInfo) || !in_array($pathInfo['extension'], $this->settings->getExtraFiletypes())) {
             parent::open($filename);
         }
     }
@@ -50,7 +50,7 @@ class Gd2 extends \Magento\Framework\Image\Adapter\Gd2
     {
         $fileName = $this->_prepareDestination($destination, $newName);
         $pathInfo = pathinfo($fileName);
-        if (!in_array($pathInfo['extension'], $this->settings->getExtraFiletypes())) {
+        if (!key_exists('extension', $pathInfo) || !in_array($pathInfo['extension'], $this->settings->getExtraFiletypes())) {
             parent::save($destination, $newName);
         }
     }
