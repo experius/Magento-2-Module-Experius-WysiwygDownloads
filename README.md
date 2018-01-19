@@ -5,9 +5,10 @@ This module makes it possible to upload different filetypes inside the WYSIWYG-e
 
    ``experius/module-wysiwygdownloads``
    
- - [Main Functionalities](#markdown-header-main-functionalities)
- - [Additional Information](#markdown-header-additional-information)
- - [Change og](#markdown-header-change-log)
+ - [Main Functionalities](#main-functionalities)
+ - [Additional Information](#additional-information)
+ - [Important Issue in Magento < 2.2](#important-issue-in-magento--22)
+ - [Change log](#change-log)
 
 # Main Functionalities
 
