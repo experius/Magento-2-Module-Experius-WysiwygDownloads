@@ -53,9 +53,40 @@ Add NGINX redirect is you use it as internal URL else where and use store_code i
     }
 ```
 
+# Important Issue in Magento < 2.2
+
+![bildschirmfoto 2017-09-20 um 16 44 22](https://user-images.githubusercontent.com/30178722/30651034-cd9c998c-9e24-11e7-9f1f-26f777ec0633.png)
+![bildschirmfoto 2017-09-20 um 16 49 11](https://user-images.githubusercontent.com/30178722/30651037-ce3745f4-9e24-11e7-9b43-4344691a7ab5.png)
+
+**src is correct:**
+`<img src="http://domain.com/pub/media/wysiwyg/.thumbs/home/home-t-shirts.png?rand=1505918839" alt="home-t-shirts.png">`
+
+**src is incorrect:**
+`<img src="http://domain.com/admin_111/cms/wysiwyg_images/thumbnail/file/aHRtbC1jaGVhdC1zaGVldC5wbmc-/key/08c5525fa3b16c91f2ad0f757282e78f6abf1f797e8c30628598f1b3824934d8/" alt="html-cheat-sheet.png">`
+
+
  ---
 
 # Change log
+
+Version 1.0.8 - Jan 19, 2018 | Lewis Voncken
+
+ * [TASK] Updated README.md and CHANGE.log
+   Added Important Issue in Magento < 2.2
+
+---
+
+Version 1.0.7 - Sep 4, 2017 | Lewis Voncken
+
+ * [BUGFIX] Solved problem with Product Image upload => Notice: Undefined index: extension
+
+---
+
+Version 1.0.6 - June 12, 2017 | Derrick Heesbeen
+
+ * [BUGFIX] make it compatible with the Experius FileManager
+
+---
 
 Version 1.0.5 - June. 7, 2017 | Lewis Voncken
 
