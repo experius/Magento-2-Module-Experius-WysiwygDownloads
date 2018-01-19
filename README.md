@@ -56,6 +56,15 @@ Add NGINX redirect is you use it as internal URL else where and use store_code i
 
 # Important Issue in Magento < 2.2
 
+## Fix
+
+This is an issue in Magento and is solved in 2.2.2 for more information see the following commit:
+
+https://github.com/magento/magento2/commit/62378774f239c2019e39bdd353c8c6c674b54fb1
+
+
+## Issue
+
 ![bildschirmfoto 2017-09-20 um 16 44 22](https://user-images.githubusercontent.com/30178722/30651034-cd9c998c-9e24-11e7-9f1f-26f777ec0633.png)
 ![bildschirmfoto 2017-09-20 um 16 49 11](https://user-images.githubusercontent.com/30178722/30651037-ce3745f4-9e24-11e7-9b43-4344691a7ab5.png)
 
