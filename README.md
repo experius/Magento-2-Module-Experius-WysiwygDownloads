@@ -46,7 +46,7 @@ To Unlink the Downloadable File just set the cursor on the Download Link and Cli
  ---
 
 
-Add NGINX redirect is you use it as internal URL else where and use store_code in url
+Add NGINX redirect if you use it as internal URL else where and use store_code in url
 
 ```
     if ( $request_uri ~ ^/(.+)/media/wysiwyg/PDF/(.*)(.pdf$|.PDF$) ) {
