@@ -89,7 +89,7 @@ class Settings extends \Magento\Framework\App\Helper\AbstractHelper
               $filetypes[] =  $setting->extension;
           }
       }
-      $defaultFiletypes = array('doc','docm','docx','csv','xml','xls','xlsx','pdf','zip','tar');
+      $defaultFiletypes = array('svg','webp','doc','docm','docx','csv','xml','xls','xlsx','pdf','zip','tar');
       return array_merge($filetypes,$defaultFiletypes);
 	}
 

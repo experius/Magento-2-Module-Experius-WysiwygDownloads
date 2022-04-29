@@ -9,6 +9,8 @@
                     <item name="jpeg" xsi:type="string">image/jpeg</item>
                     <item name="png" xsi:type="string">image/png</item>
                     <item name="gif" xsi:type="string">image/gif</item>
+                    <item name="webp" xsi:type="string">image/webp</item>
+                    <item name="svg" xsi:type="string">image/svg+xml</item>
                     <item name="pdf" xsi:type="string">application/pdf</item>
                     <item name="doc" xsi:type="string">application/msword</item>
                     <item name="docx" xsi:type="string">application/vnd.openxmlformats-officedocument.wordprocessingml.document</item>
@@ -29,6 +31,8 @@
                     <item name="jpeg" xsi:type="string">image/jpeg</item>
                     <item name="png" xsi:type="string">image/png</item>
                     <item name="gif" xsi:type="string">image/gif</item>
+                    <item name="webp" xsi:type="string">image/webp</item>
+                    <item name="svg" xsi:type="string">image/svg+xml</item>
                     <item name="pdf" xsi:type="string">application/pdf</item>
                     <item name="doc" xsi:type="string">application/msword</item>
                     <item name="docx" xsi:type="string">application/vnd.openxmlformats-officedocument.wordprocessingml.document</item>
