@@ -83,7 +83,13 @@ class Settings extends \Magento\Framework\App\Helper\AbstractHelper
 	public function getExtraFiletypes()
 	{
       $filetypes = array();
-      $settings = json_decode($this->getConfigValue(self::CONFIG_PATH_FILETYPES));
+      $settings = null;
+
+      $configFileTypes = $this->getConfigValue(self::CONFIG_PATH_FILETYPES);
+      if ($configFileTypes)
+      {
+          $settings = json_decode($configFileTypes);
+      }
       if ($settings) {
           foreach($settings as $setting){
               $filetypes[] =  $setting->extension;
