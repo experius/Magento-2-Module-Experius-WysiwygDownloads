@@ -59,6 +59,6 @@
 	</type>
 	<preference for="Magento\Framework\Image\Adapter\Gd2" type="Experius\WysiwygDownloads\Image\Adapter\Gd2" />
 	<type name="Magento\MediaStorage\Model\File\Validator\NotProtectedExtension">
-        	<plugin sortOrder="1" name="RemoveSvgFromNotProtectedExtension" type="Experius\WysiwygDownloads\Plugin\File\UploaderPlugin"/>
+        	<plugin sortOrder="1" name="RemoveSvgFromNotProtectedExtension" type="Experius\WysiwygDownloads\Plugin\File\Validator\NotProtectedExtensionPlugin"/>
     	</type>
 </config>
