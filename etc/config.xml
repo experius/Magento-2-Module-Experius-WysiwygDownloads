@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <general>   
+            <file>
+                <protected_extensions>
+                    <php>php</php>
+                    <php3>php3</php3>
+                    <php4>php4</php4>
+                    <php5>php5</php5>
+                    <php7>php7</php7>
+                    <htaccess>htaccess</htaccess>
+                    <jsp>jsp</jsp>
+                    <pl>pl</pl>
+                    <py>py</py>
+                    <asp>asp</asp>
+                    <aspx>aspx</aspx>
+                    <sh>sh</sh>
+                    <cgi>cgi</cgi>
+                    <htm>htm</htm>
+                    <html>html</html>
+                    <phtml>phtml</phtml>
+                    <shtml>shtml</shtml>
+                    <phpt>phpt</phpt>
+                    <pht>pht</pht>
+                    <phar>phar</phar>
+                    <xml>xml</xml>
+                    <xhtml>xhtml</xhtml>
+                </protected_extensions>
+            </file>
+        </general>
+    </default>
+</config>
