@@ -23,6 +23,7 @@
                     <item name="mp4" xsi:type="string">video/mp4</item>
                     <item name="ogg" xsi:type="string">video/ogg</item>
                     <item name="webm" xsi:type="string">video/webm</item>
+                    <item name="svg" xsi:type="string">image/svg+xml</item>
                 </item>
                 <item name="image_allowed" xsi:type="array">
                     <item name="jpg" xsi:type="string">image/jpg</item>
@@ -43,6 +44,7 @@
                     <item name="mp4" xsi:type="string">video/mp4</item>
                     <item name="ogg" xsi:type="string">video/ogg</item>
                     <item name="webm" xsi:type="string">video/webm</item>
+                    <item name="svg" xsi:type="string">image/svg+xml</item>
                 </item>
                 <item name="media_allowed" xsi:type="array">
                     <item name="flv" xsi:type="string">video/x-flv</item>
@@ -56,4 +58,7 @@
         </arguments>
 	</type>
 	<preference for="Magento\Framework\Image\Adapter\Gd2" type="Experius\WysiwygDownloads\Image\Adapter\Gd2" />
+	<type name="Magento\MediaStorage\Model\File\Validator\NotProtectedExtension">
+        	<plugin sortOrder="1" name="RemoveSvgFromNotProtectedExtension" type="Experius\WysiwygDownloads\Plugin\File\UploaderPlugin"/>
+    	</type>
 </config>
