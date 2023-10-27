@@ -1,7 +1,9 @@
 <?xml version="1.0" ?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
 	<type name="Magento\Cms\Model\Wysiwyg\Images\Storage">
-		<plugin disabled="false" name="Experius_WysiwygDownloads_Plugin_Magento_Cms_Model_Wysiwyg_Images_Storage" sortOrder="10" type="Experius\WysiwygDownloads\Plugin\Magento\Cms\Model\Wysiwyg\Images\Storage"/>
+		<plugin name="Experius_WysiwygDownloads_Plugin_Magento_Cms_Model_Wysiwyg_Images_Storage"
+                type="Experius\WysiwygDownloads\Plugin\Magento\Cms\Model\Wysiwyg\Images\Storage"
+                sortOrder="10" />
         <arguments>
             <argument name="extensions" xsi:type="array">
                 <item name="allowed" xsi:type="array">
@@ -43,6 +45,7 @@
                     <item name="mp4" xsi:type="string">video/mp4</item>
                     <item name="ogg" xsi:type="string">video/ogg</item>
                     <item name="webm" xsi:type="string">video/webm</item>
+                    <item name="ods" xsi:type="string">application/vnd.oasis.opendocument.spreadsheet</item>
                 </item>
                 <item name="media_allowed" xsi:type="array">
                     <item name="flv" xsi:type="string">video/x-flv</item>

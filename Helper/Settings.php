@@ -1,28 +1,29 @@
 <?php
 /**
- * This module makes it possible to upload different filetypes inside the WYSIWYG-editor. Extra filetypes are Word (doc, docm, docx), Excel (csv, xml, xls, xlsx), PDF (pdf), Compressed Folder (zip, tar)
- * Copyright (C) 2016
- *
- * This file included in Experius/WysiwygDownloads is licensed under OSL 3.0
- *
- * http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
- * Please see LICENSE.txt for the full text of the OSL 3.0 license
+ * Copyright © Happy Horizon Utrecht Development & Technology B.V. All rights reserved.
+ * See COPYING.txt for license details.
  */
+declare(strict_types=1);
 
 namespace Experius\WysiwygDownloads\Helper;
 
+use Magento\Framework\App\Helper\AbstractHelper;
 use Magento\Framework\App\Helper\Context;
+use Magento\Store\Model\ScopeInterface;
+use Magento\Store\Model\StoreManagerInterface;
 
-/**
- * Class Settings
- */
-class Settings extends \Magento\Framework\App\Helper\AbstractHelper
+class Settings extends AbstractHelper
 {
+    const CONFIG_PATH_FILETYPES = 'wysiwyg/filetypes';
 
-	const CONFIG_PATH_FILETYPES = 'wysiwyg/filetypes';
-
+    /**
+     * @var string
+     */
     public $configPathModule = 'cms';
 
+    /**
+     * @var StoreManagerInterface
+     */
     protected $_storeManager;
 
     /**
@@ -30,27 +31,29 @@ class Settings extends \Magento\Framework\App\Helper\AbstractHelper
      *
      * @var int
      */
-    protected $_storeId;
+    protected $_storeId = null;
 
-
+    /**
+     * @param Context $context
+     * @param StoreManagerInterface $storeManager
+     */
     public function __construct(
         Context $context,
-        \Magento\Store\Model\StoreManagerInterface $storeManager
-    )
-    {
+        StoreManagerInterface $storeManager
+    ) {
         $this->_storeManager = $storeManager;
         parent::__construct($context);
     }
 
     /**
-     * Set a specified store ID value
+     * Get store ID
      *
-     * @param int $store
-     * @return $this
+     * @return int
+     * @throws \Magento\Framework\Exception\NoSuchEntityException
      */
     public function getStoreId()
     {
-        if (!$this->_storeId){
+        if (!$this->_storeId) {
             $this->_storeId = $this->_storeManager->getStore()->getId();
         }
         return $this->_storeId;
@@ -60,39 +63,49 @@ class Settings extends \Magento\Framework\App\Helper\AbstractHelper
      * Set a specified store ID value
      *
      * @param int $store
-     * @return $this
+     * @return void
      */
     public function setStoreId($store)
     {
         $this->_storeId = $store;
-        return $this;
     }
 
+    /**
+     * Get config value
+     *
+     * @param $path
+     * @return mixed
+     */
     public function getConfigValue($path)
     {
-        if (substr_count($path, '/') < 2){
+        if (substr_count($path, '/') < 2) {
             $path = $this->configPathModule . '/' . $path;
         }
         return $this->scopeConfig->getValue(
             $path,
-            \Magento\Store\Model\ScopeInterface::SCOPE_STORE,
+            ScopeInterface::SCOPE_STORE,
             $this->getStoreId()
         );
     }
 
+    /**
+     * Get extra file types (allowed)
+     *
+     * @return array|string[]
+     */
     public function getExtraFiletypes()
     {
-        $filetypes = array();
+        $filetypes = [];
         if ($this->getConfigValue(self::CONFIG_PATH_FILETYPES) != null) {
             $settings = json_decode($this->getConfigValue(self::CONFIG_PATH_FILETYPES));
             if ($settings) {
-                foreach($settings as $setting){
-                    $filetypes[] =  $setting->extension;
+                foreach ($settings as $setting) {
+                    $filetypes[] = $setting->extension;
                 }
             }
         }
 
-        $defaultFiletypes = array('doc','docm','docx','csv','xml','xls','xlsx','pdf','zip','tar');
-        return array_merge($filetypes,$defaultFiletypes);
+        $defaultFiletypes = ['doc', 'docm', 'docx', 'csv', 'xml', 'xls', 'xlsx', 'pdf', 'zip', 'tar', 'ods'];
+        return array_merge($filetypes, $defaultFiletypes);
     }
 }

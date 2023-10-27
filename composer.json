@@ -1,10 +1,16 @@
 {
     "name": "experius/module-wysiwygdownloads",
-    "description": "This module makes it possible to upload different filetypes inside the WYSIWYG-editor. Extra filetypes are Word (doc, docm, docx), Excel (csv, xml, xls, xlsx), PDF (pdf), Compressed Folder (zip, tar)",
+    "description": "This module makes it possible to upload different filetypes inside the WYSIWYG-editor. Extra filetypes are Word (doc, docm, docx), Excel (csv, xml, xls, xlsx, ods), PDF (pdf), Compressed Folder (zip, tar)",
+    "type": "magento2-module",
+    "license": "OSL-3.0",
     "authors": [
         {
             "name": "Mr. Lewis",
             "email": "lewis@experius.nl"
+        },
+        {
+            "name": "Boris van Katwijk",
+            "email": "borisvankatwijk@happyhorizon.com"
         }
     ],
     "minimum-stability": "dev",
