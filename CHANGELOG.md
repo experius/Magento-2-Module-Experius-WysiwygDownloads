@@ -1,3 +1,19 @@
+## 1.2.0 (2023-10-27)
+
+[View Release](git@github.com:experius/Magento-2-Module-Experius-WysiwygDownloads.git/commits/tag/1.2.0)
+
+*  [FEATURE][IN23-254] Add ods as default allowed filetype. Refactor classes abit mostly to avoid "unused parameters such as $subject" listed below. *(Boris van Katwijk)*
+*  [FEATURE][IN23-254] Add support for .odt files and make .ods mimeType mapping complete in di.xml. *(Boris van Katwijk)*
+*  [FEATURE][IN23-254] Add plugin to override the label from "Upload image" to "Upload image / file". This more clearly presents the functionality. *(Boris van Katwijk)*
+
+
+## 1.1.1 (2023-03-14)
+
+[View Release](git@github.com:experius/Magento-2-Module-Experius-WysiwygDownloads.git/commits/tag/1.1.1)
+
+*  [FEATURE][SGO-630] Adding extra check if there is a config value. *(Jeffrey Leeuw)*
+
+
 ## 1.1.0 (2021-01-25)
 
 [View Release](git@github.com:experius/Magento-2-Module-Experius-WysiwygDownloads.git/commits/tag/1.1.0)

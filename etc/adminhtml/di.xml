@@ -61,5 +61,10 @@
             </argument>
         </arguments>
 	</type>
+    <type name="Magento\MediaGalleryUi\Ui\Component\Control\UploadAssets">
+        <plugin name="Experius_WysiwygDownloads_Plugin_Magento_MediaGalleryUi_Ui_Component_Control_UploadAssets"
+                type="Experius\WysiwygDownloads\Plugin\Magento\MediaGalleryUi\Ui\Component\Control\UploadAssets"
+                sortOrder="10"/>
+    </type>
 	<preference for="Magento\Framework\Image\Adapter\Gd2" type="Experius\WysiwygDownloads\Image\Adapter\Gd2" />
 </config>
