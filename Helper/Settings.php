@@ -105,7 +105,7 @@ class Settings extends AbstractHelper
             }
         }
 
-        $defaultFiletypes = ['doc', 'docm', 'docx', 'csv', 'xml', 'xls', 'xlsx', 'pdf', 'zip', 'tar', 'ods'];
+        $defaultFiletypes = ['doc', 'docm', 'docx', 'odt', 'csv', 'xml', 'xls', 'xlsx', 'ods', 'pdf', 'zip', 'tar'];
         return array_merge($filetypes, $defaultFiletypes);
     }
 }

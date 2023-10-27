@@ -15,11 +15,13 @@
                     <item name="doc" xsi:type="string">application/msword</item>
                     <item name="docx" xsi:type="string">application/vnd.openxmlformats-officedocument.wordprocessingml.document</item>
                     <item name="docm" xsi:type="string">application/vnd.ms-word.document.macroEnabled.12</item>
+                    <item name="odt" xsi:type="string">application/vnd.oasis.opendocument.text</item>
                     <item name="csv" xsi:type="string">text/plain</item>
                     <item name="txt" xsi:type="string">text/plain</item>
                     <item name="xml" xsi:type="string">application/xml</item>
                     <item name="xls" xsi:type="string">application/vnd.ms-excel</item>
                     <item name="xlsx" xsi:type="string">application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</item>
+                    <item name="ods" xsi:type="string">application/vnd.oasis.opendocument.spreadsheet</item>
                     <item name="zip" xsi:type="string">application/zip</item>
                     <item name="tar" xsi:type="string">application/x-tar</item>
                     <item name="mp4" xsi:type="string">video/mp4</item>
@@ -35,17 +37,18 @@
                     <item name="doc" xsi:type="string">application/msword</item>
                     <item name="docx" xsi:type="string">application/vnd.openxmlformats-officedocument.wordprocessingml.document</item>
                     <item name="docm" xsi:type="string">application/vnd.ms-word.document.macroEnabled.12</item>
+                    <item name="odt" xsi:type="string">application/vnd.oasis.opendocument.text</item>
                     <item name="csv" xsi:type="string">text/plain</item>
                     <item name="txt" xsi:type="string">text/plain</item>
                     <item name="xml" xsi:type="string">application/xml</item>
                     <item name="xls" xsi:type="string">application/vnd.ms-excel</item>
                     <item name="xlsx" xsi:type="string">application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</item>
+                    <item name="ods" xsi:type="string">application/vnd.oasis.opendocument.spreadsheet</item>
                     <item name="zip" xsi:type="string">application/zip</item>
                     <item name="tar" xsi:type="string">application/x-tar</item>
                     <item name="mp4" xsi:type="string">video/mp4</item>
                     <item name="ogg" xsi:type="string">video/ogg</item>
                     <item name="webm" xsi:type="string">video/webm</item>
-                    <item name="ods" xsi:type="string">application/vnd.oasis.opendocument.spreadsheet</item>
                 </item>
                 <item name="media_allowed" xsi:type="array">
                     <item name="flv" xsi:type="string">video/x-flv</item>
