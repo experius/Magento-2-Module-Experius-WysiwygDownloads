@@ -67,4 +67,19 @@
                 sortOrder="10"/>
     </type>
 	<preference for="Magento\Framework\Image\Adapter\Gd2" type="Experius\WysiwygDownloads\Image\Adapter\Gd2" />
+    <type name="Magento\MediaGalleryIntegration\Plugin\SaveImageInformation">
+        <arguments>
+            <argument name="imageExtensions" xsi:type="array">
+                <item name="pdf" xsi:type="string">pdf</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\MediaGalleryRenditions\Model\Queue\FetchRenditionPathsBatches">
+        <arguments>
+            <argument name="batchSize" xsi:type="number">100</argument>
+            <argument name="fileExtensions" xsi:type="array">
+                <item name="pdf" xsi:type="string">pdf</item>
+            </argument>
+        </arguments>
+    </type>
 </config>
