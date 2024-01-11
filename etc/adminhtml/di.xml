@@ -11,6 +11,8 @@
                     <item name="jpeg" xsi:type="string">image/jpeg</item>
                     <item name="png" xsi:type="string">image/png</item>
                     <item name="gif" xsi:type="string">image/gif</item>
+                    <item name="webp" xsi:type="string">image/webp</item>
+                    <item name="svg" xsi:type="string">image/svg+xml</item>
                     <item name="pdf" xsi:type="string">application/pdf</item>
                     <item name="doc" xsi:type="string">application/msword</item>
                     <item name="docx" xsi:type="string">application/vnd.openxmlformats-officedocument.wordprocessingml.document</item>
@@ -24,6 +26,7 @@
                     <item name="ods" xsi:type="string">application/vnd.oasis.opendocument.spreadsheet</item>
                     <item name="zip" xsi:type="string">application/zip</item>
                     <item name="tar" xsi:type="string">application/x-tar</item>
+                    <item name="mp3" xsi:type="string">audio/mpeg</item>
                     <item name="mp4" xsi:type="string">video/mp4</item>
                     <item name="ogg" xsi:type="string">video/ogg</item>
                     <item name="webm" xsi:type="string">video/webm</item>
@@ -33,6 +36,8 @@
                     <item name="jpeg" xsi:type="string">image/jpeg</item>
                     <item name="png" xsi:type="string">image/png</item>
                     <item name="gif" xsi:type="string">image/gif</item>
+                    <item name="webp" xsi:type="string">image/webp</item>
+                    <item name="svg" xsi:type="string">image/svg+xml</item>
                     <item name="pdf" xsi:type="string">application/pdf</item>
                     <item name="doc" xsi:type="string">application/msword</item>
                     <item name="docx" xsi:type="string">application/vnd.openxmlformats-officedocument.wordprocessingml.document</item>
@@ -46,12 +51,12 @@
                     <item name="ods" xsi:type="string">application/vnd.oasis.opendocument.spreadsheet</item>
                     <item name="zip" xsi:type="string">application/zip</item>
                     <item name="tar" xsi:type="string">application/x-tar</item>
+                    <item name="mp3" xsi:type="string">audio/mpeg</item>
                     <item name="mp4" xsi:type="string">video/mp4</item>
                     <item name="ogg" xsi:type="string">video/ogg</item>
                     <item name="webm" xsi:type="string">video/webm</item>
                 </item>
                 <item name="media_allowed" xsi:type="array">
-                    <item name="flv" xsi:type="string">video/x-flv</item>
                     <item name="swf" xsi:type="string">application/x-shockwave-flash</item>
                     <item name="avi" xsi:type="string">video/x-msvideo</item>
                     <item name="mov" xsi:type="string">video/x-sgi-movie</item>
