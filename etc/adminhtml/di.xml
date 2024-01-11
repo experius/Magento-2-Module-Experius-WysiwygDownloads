@@ -76,7 +76,6 @@
     </type>
     <type name="Magento\MediaGalleryRenditions\Model\Queue\FetchRenditionPathsBatches">
         <arguments>
-            <argument name="batchSize" xsi:type="number">100</argument>
             <argument name="fileExtensions" xsi:type="array">
                 <item name="pdf" xsi:type="string">pdf</item>
             </argument>
