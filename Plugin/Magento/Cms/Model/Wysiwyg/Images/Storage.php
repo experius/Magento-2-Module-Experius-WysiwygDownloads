@@ -102,4 +102,25 @@ class Storage
         }
         return [$source, $keepRatio];
     }
+
+    /**
+     * @param \Magento\Cms\Model\Wysiwyg\Images\Storage $subject
+     * @param \Closure $proceed
+     * @param $source
+     * @param $keepRatio
+     * @return mixed
+     * @SuppressWarnings(PHPMD.UnusedFormalParameter)
+     */
+    public function aroundResizeFile(
+        \Magento\Cms\Model\Wysiwyg\Images\Storage $subject,
+        \Closure $proceed,
+                                                  $source,
+                                                  $keepRatio = true
+    ) {
+        if (pathinfo($source, PATHINFO_EXTENSION) == 'pdf') {
+            return $source;
+        }
+
+        return $proceed($source, $keepRatio);
+    }
 }
