@@ -9,7 +9,7 @@ namespace Experius\WysiwygDownloads\Plugin\Magento\MediaGalleryUi\Ui\Component\L
 
 use Magento\Framework\Filesystem;
 use Magento\Store\Model\StoreManagerInterface;
-use Experius\Core\Helper\Settings;
+use Experius\WysiwygDownloads\Helper\Settings;
 
 class Url
 {
