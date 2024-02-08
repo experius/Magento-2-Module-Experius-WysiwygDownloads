@@ -76,6 +76,7 @@
         <arguments>
             <argument name="imageExtensions" xsi:type="array">
                 <item name="pdf" xsi:type="string">pdf</item>
+                <item name="svg" xsi:type="string">svg</item>
             </argument>
         </arguments>
     </type>
@@ -83,6 +84,7 @@
         <arguments>
             <argument name="fileExtensions" xsi:type="array">
                 <item name="pdf" xsi:type="string">pdf</item>
+                <item name="svg" xsi:type="string">svg</item>
             </argument>
         </arguments>
     </type>
