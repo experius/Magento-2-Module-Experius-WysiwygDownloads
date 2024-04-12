@@ -17,6 +17,17 @@ class Gd2 extends \Magento\Framework\Image\Adapter\Gd2
      * @var Settings
      */
     protected $settings;
+    protected $imageFileTypes = [
+        'jpg',
+        'jpeg',
+        'png',
+        'gif',
+        'webp',
+        'bmp',
+        'xpm',
+        'xbm',
+        'wbmp'
+    ];
 
     /**
      * @param Filesystem $filesystem
@@ -47,6 +58,7 @@ class Gd2 extends \Magento\Framework\Image\Adapter\Gd2
         $pathInfo = pathinfo($filename);
         if (!key_exists('extension', $pathInfo)
             || !in_array($pathInfo['extension'], $this->settings->getExtraFiletypes())
+            || in_array($pathInfo['extension'], $this->imageFileTypes)
         ) {
             parent::open($filename);
         }
@@ -67,6 +79,7 @@ class Gd2 extends \Magento\Framework\Image\Adapter\Gd2
         $pathInfo = pathinfo($fileName);
         if (!key_exists('extension', $pathInfo)
             || !in_array($pathInfo['extension'], $this->settings->getExtraFiletypes())
+            || in_array($pathInfo['extension'], $this->imageFileTypes)
         ) {
             parent::save($destination, $newName);
         }
