@@ -71,10 +71,19 @@
                 type="Experius\WysiwygDownloads\Plugin\Magento\MediaGalleryUi\Ui\Component\Control\UploadAssets"
                 sortOrder="10"/>
     </type>
+    <type name="Magento\MediaGalleryUi\Ui\Component\Listing\Columns\Url">
+        <plugin name="Experius_WysiwygDownloads_Plugin_Magento_MediaGalleryUi_Ui_Component_Listing_Columns_Url"
+                type="Experius\WysiwygDownloads\Plugin\Magento\MediaGalleryUi\Ui\Component\Listing\Columns\Url"
+                sortOrder="10" disabled="false"/>
+    </type>
 	<preference for="Magento\Framework\Image\Adapter\Gd2" type="Experius\WysiwygDownloads\Image\Adapter\Gd2" />
     <type name="Magento\MediaGalleryIntegration\Plugin\SaveImageInformation">
         <arguments>
             <argument name="imageExtensions" xsi:type="array">
+                <item name="jpg" xsi:type="string">jpg</item>
+                <item name="jpeg" xsi:type="string">jpeg</item>
+                <item name="gif" xsi:type="string">gif</item>
+                <item name="png" xsi:type="string">png</item>
                 <item name="pdf" xsi:type="string">pdf</item>
                 <item name="svg" xsi:type="string">svg</item>
             </argument>
@@ -83,6 +92,22 @@
     <type name="Magento\MediaGalleryRenditions\Model\Queue\FetchRenditionPathsBatches">
         <arguments>
             <argument name="fileExtensions" xsi:type="array">
+                <item name="jpg" xsi:type="string">jpg</item>
+                <item name="jpeg" xsi:type="string">jpeg</item>
+                <item name="gif" xsi:type="string">gif</item>
+                <item name="png" xsi:type="string">png</item>
+                <item name="pdf" xsi:type="string">pdf</item>
+                <item name="svg" xsi:type="string">svg</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\MediaGallerySynchronization\Model\FetchMediaStorageFileBatches">
+        <arguments>
+            <argument name="fileExtensions" xsi:type="array">
+                <item name="jpg" xsi:type="string">jpg</item>
+                <item name="jpeg" xsi:type="string">jpeg</item>
+                <item name="gif" xsi:type="string">gif</item>
+                <item name="png" xsi:type="string">png</item>
                 <item name="pdf" xsi:type="string">pdf</item>
                 <item name="svg" xsi:type="string">svg</item>
             </argument>
