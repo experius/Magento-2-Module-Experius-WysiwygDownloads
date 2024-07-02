@@ -7,7 +7,7 @@
                     <label>Extra Allowed Filetypes in the WYSIWYG-editor</label>
                 	<frontend_model>Experius\WysiwygDownloads\Block\Adminhtml\System\Config\Form\Field\Filetypes</frontend_model>
                     <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
-                    <comment><![CDATA[By default the following filetypes are available after installing this module 'doc','docm','docx','csv','xml','xls','xlsx','pdf','zip','tar']]></comment>
+                    <comment><![CDATA[By default the following filetypes are available after installing this module 'jpg', 'jpeg', 'png', 'gif', 'webp', 'svg', 'pdf', 'doc', 'docx', 'docm', 'odt', 'csv', 'txt', 'xml', 'xls', 'xlsx', 'ods', 'zip', 'tar', 'mp3', 'mp4', 'ogg', 'webm', 'bmp']]></comment>
 				</field>
 			</group>
 		</section>
