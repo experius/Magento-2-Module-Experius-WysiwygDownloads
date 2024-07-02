@@ -129,6 +129,7 @@ class Settings extends AbstractHelper
             'mp4',
             'ogg',
             'webm',
+            'bmp'
         ];
 
         return array_merge($filetypes, $defaultFiletypes);
