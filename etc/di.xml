@@ -13,4 +13,83 @@
     <type name="Magento\Cms\Model\Wysiwyg\Images\Storage">
         <plugin name="Experius_WysiwygDownloads_Plugin_Magento_Cms_Model_Wysiwyg_Images_Storage" type="Experius\WysiwygDownloads\Plugin\Magento\Cms\Model\Wysiwyg\Images\Storage" sortOrder="10" disabled="false"/>
     </type>
+
+    <type name="Magento\Cms\Model\Wysiwyg\Images\Storage">
+        <plugin name="Experius_WysiwygDownloads_Plugin_Magento_Cms_Model_Wysiwyg_Images_Storage"
+                type="Experius\WysiwygDownloads\Plugin\Magento\Cms\Model\Wysiwyg\Images\Storage"
+                sortOrder="10" />
+        <arguments>
+            <argument name="extensions" xsi:type="array">
+                <item name="allowed" xsi:type="array">
+                    <item name="webp" xsi:type="string">image/webp</item>
+                    <item name="svg" xsi:type="string">image/svg+xml</item>
+                    <item name="pdf" xsi:type="string">application/pdf</item>
+                    <item name="doc" xsi:type="string">application/msword</item>
+                    <item name="docx" xsi:type="string">application/vnd.openxmlformats-officedocument.wordprocessingml.document</item>
+                    <item name="docm" xsi:type="string">application/vnd.ms-word.document.macroEnabled.12</item>
+                    <item name="odt" xsi:type="string">application/vnd.oasis.opendocument.text</item>
+                    <item name="csv" xsi:type="string">text/plain</item>
+                    <item name="txt" xsi:type="string">text/plain</item>
+                    <item name="xml" xsi:type="string">application/xml</item>
+                    <item name="xls" xsi:type="string">application/vnd.ms-excel</item>
+                    <item name="xlsx" xsi:type="string">application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</item>
+                    <item name="ods" xsi:type="string">application/vnd.oasis.opendocument.spreadsheet</item>
+                    <item name="zip" xsi:type="string">application/zip</item>
+                    <item name="tar" xsi:type="string">application/x-tar</item>
+                    <item name="mp3" xsi:type="string">audio/mpeg</item>
+                    <item name="mp4" xsi:type="string">video/mp4</item>
+                    <item name="ogg" xsi:type="string">video/ogg</item>
+                    <item name="webm" xsi:type="string">video/webm</item>
+                </item>
+                <item name="image_allowed" xsi:type="array">
+                    <item name="webp" xsi:type="string">image/webp</item>
+                    <item name="svg" xsi:type="string">image/svg+xml</item>
+                    <item name="pdf" xsi:type="string">application/pdf</item>
+                    <item name="doc" xsi:type="string">application/msword</item>
+                    <item name="docx" xsi:type="string">application/vnd.openxmlformats-officedocument.wordprocessingml.document</item>
+                    <item name="docm" xsi:type="string">application/vnd.ms-word.document.macroEnabled.12</item>
+                    <item name="odt" xsi:type="string">application/vnd.oasis.opendocument.text</item>
+                    <item name="csv" xsi:type="string">text/plain</item>
+                    <item name="txt" xsi:type="string">text/plain</item>
+                    <item name="xml" xsi:type="string">application/xml</item>
+                    <item name="xls" xsi:type="string">application/vnd.ms-excel</item>
+                    <item name="xlsx" xsi:type="string">application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</item>
+                    <item name="ods" xsi:type="string">application/vnd.oasis.opendocument.spreadsheet</item>
+                    <item name="zip" xsi:type="string">application/zip</item>
+                    <item name="tar" xsi:type="string">application/x-tar</item>
+                    <item name="mp3" xsi:type="string">audio/mpeg</item>
+                    <item name="mp4" xsi:type="string">video/mp4</item>
+                    <item name="ogg" xsi:type="string">video/ogg</item>
+                    <item name="webm" xsi:type="string">video/webm</item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+
+    <type name="Magento\MediaGalleryIntegration\Plugin\SaveImageInformation">
+        <arguments>
+            <argument name="imageExtensions" xsi:type="array">
+                <item name="pdf" xsi:type="string">pdf</item>
+                <item name="svg" xsi:type="string">svg</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <type name="Magento\MediaGalleryRenditions\Model\Queue\FetchRenditionPathsBatches">
+        <arguments>
+            <argument name="fileExtensions" xsi:type="array">
+                <item name="pdf" xsi:type="string">pdf</item>
+                <item name="svg" xsi:type="string">svg</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <type name="Magento\MediaGallerySynchronization\Model\FetchMediaStorageFileBatches">
+        <arguments>
+            <argument name="fileExtensions" xsi:type="array">
+                <item name="pdf" xsi:type="string">pdf</item>
+                <item name="svg" xsi:type="string">svg</item>
+            </argument>
+        </arguments>
+    </type>
 </config>
