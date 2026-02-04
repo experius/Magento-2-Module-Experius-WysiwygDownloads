@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/layout_generic.xsd">
+    <referenceContainer name="content">
+        <referenceContainer name="content">
+            <block class="Magento\Backend\Block\Template"
+                   name="experius.wysiwygdownloads.full.url.details"
+                   template="Experius_WysiwygDownloads::image_details/full_url.phtml"
+                   after="image.details"/>
+        </referenceContainer>
+    </referenceContainer>
+</layout>
