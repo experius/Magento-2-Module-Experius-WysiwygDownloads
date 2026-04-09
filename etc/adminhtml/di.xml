@@ -30,6 +30,7 @@
                     <item name="mp4" xsi:type="string">video/mp4</item>
                     <item name="ogg" xsi:type="string">video/ogg</item>
                     <item name="webm" xsi:type="string">video/webm</item>
+                    <item name="mov" xsi:type="string">video/quicktime</item>
                     <item name="ics" xsi:type="string">text/calendar</item>
                 </item>
                 <item name="image_allowed" xsi:type="array">
@@ -56,11 +57,12 @@
                     <item name="mp4" xsi:type="string">video/mp4</item>
                     <item name="ogg" xsi:type="string">video/ogg</item>
                     <item name="webm" xsi:type="string">video/webm</item>
+                    <item name="mov" xsi:type="string">video/quicktime</item>
                 </item>
                 <item name="media_allowed" xsi:type="array">
                     <item name="swf" xsi:type="string">application/x-shockwave-flash</item>
                     <item name="avi" xsi:type="string">video/x-msvideo</item>
-                    <item name="mov" xsi:type="string">video/x-sgi-movie</item>
+                    <item name="mov" xsi:type="string">video/quicktime</item>
                     <item name="rm" xsi:type="string">application/vnd.rn-realmedia</item>
                     <item name="wmv" xsi:type="string">video/x-ms-wmv</item>
                 </item>
@@ -81,24 +83,83 @@
     <type name="Magento\MediaGalleryIntegration\Plugin\SaveImageInformation">
         <arguments>
             <argument name="imageExtensions" xsi:type="array">
+                <!-- Images -->
                 <item name="jpg" xsi:type="string">jpg</item>
                 <item name="jpeg" xsi:type="string">jpeg</item>
-                <item name="gif" xsi:type="string">gif</item>
                 <item name="png" xsi:type="string">png</item>
-                <item name="pdf" xsi:type="string">pdf</item>
+                <item name="gif" xsi:type="string">gif</item>
+                <item name="webp" xsi:type="string">webp</item>
                 <item name="svg" xsi:type="string">svg</item>
+                <item name="bmp" xsi:type="string">bmp</item>
+                <!-- Documents -->
+                <item name="pdf" xsi:type="string">pdf</item>
+                <item name="doc" xsi:type="string">doc</item>
+                <item name="docx" xsi:type="string">docx</item>
+                <item name="docm" xsi:type="string">docm</item>
+                <item name="odt" xsi:type="string">odt</item>
+                <item name="csv" xsi:type="string">csv</item>
+                <item name="txt" xsi:type="string">txt</item>
+                <item name="xml" xsi:type="string">xml</item>
+                <item name="xls" xsi:type="string">xls</item>
+                <item name="xlsx" xsi:type="string">xlsx</item>
+                <item name="ods" xsi:type="string">ods</item>
+                <!-- Archives -->
+                <item name="zip" xsi:type="string">zip</item>
+                <item name="tar" xsi:type="string">tar</item>
+                <!-- Audio -->
+                <item name="mp3" xsi:type="string">mp3</item>
+                <!-- Video -->
+                <item name="mp4" xsi:type="string">mp4</item>
+                <item name="webm" xsi:type="string">webm</item>
+                <item name="ogg" xsi:type="string">ogg</item>
+                <item name="mov" xsi:type="string">mov</item>
+                <item name="avi" xsi:type="string">avi</item>
+                <item name="wmv" xsi:type="string">wmv</item>
+                <item name="swf" xsi:type="string">swf</item>
+                <item name="rm" xsi:type="string">rm</item>
+                <!-- Calendar -->
+                <item name="ics" xsi:type="string">ics</item>
             </argument>
         </arguments>
     </type>
     <type name="Magento\MediaGalleryRenditions\Model\Queue\FetchRenditionPathsBatches">
         <arguments>
             <argument name="fileExtensions" xsi:type="array">
+                <!-- Images -->
                 <item name="jpg" xsi:type="string">jpg</item>
                 <item name="jpeg" xsi:type="string">jpeg</item>
-                <item name="gif" xsi:type="string">gif</item>
                 <item name="png" xsi:type="string">png</item>
-                <item name="pdf" xsi:type="string">pdf</item>
+                <item name="gif" xsi:type="string">gif</item>
+                <item name="webp" xsi:type="string">webp</item>
                 <item name="svg" xsi:type="string">svg</item>
+                <item name="bmp" xsi:type="string">bmp</item>
+                <!-- Documents -->
+                <item name="pdf" xsi:type="string">pdf</item>
+                <item name="doc" xsi:type="string">doc</item>
+                <item name="docx" xsi:type="string">docx</item>
+                <item name="docm" xsi:type="string">docm</item>
+                <item name="odt" xsi:type="string">odt</item>
+                <item name="csv" xsi:type="string">csv</item>
+                <item name="txt" xsi:type="string">txt</item>
+                <item name="xml" xsi:type="string">xml</item>
+                <item name="xls" xsi:type="string">xls</item>
+                <item name="xlsx" xsi:type="string">xlsx</item>
+                <item name="ods" xsi:type="string">ods</item>
+                <!-- Archives -->
+                <item name="zip" xsi:type="string">zip</item>
+                <item name="tar" xsi:type="string">tar</item>
+                <!-- Audio -->
+                <item name="mp3" xsi:type="string">mp3</item>
+                <!-- Video -->
+                <item name="mp4" xsi:type="string">mp4</item>
+                <item name="webm" xsi:type="string">webm</item>
+                <item name="ogg" xsi:type="string">ogg</item>
+                <item name="mov" xsi:type="string">mov</item>
+                <item name="avi" xsi:type="string">avi</item>
+                <item name="wmv" xsi:type="string">wmv</item>
+                <item name="swf" xsi:type="string">swf</item>
+                <item name="rm" xsi:type="string">rm</item>
+                <!-- Calendar -->
                 <item name="ics" xsi:type="string">ics</item>
             </argument>
         </arguments>
@@ -106,12 +167,41 @@
     <type name="Magento\MediaGallerySynchronization\Model\FetchMediaStorageFileBatches">
         <arguments>
             <argument name="fileExtensions" xsi:type="array">
+                <!-- Images -->
                 <item name="jpg" xsi:type="string">jpg</item>
                 <item name="jpeg" xsi:type="string">jpeg</item>
-                <item name="gif" xsi:type="string">gif</item>
                 <item name="png" xsi:type="string">png</item>
-                <item name="pdf" xsi:type="string">pdf</item>
+                <item name="gif" xsi:type="string">gif</item>
+                <item name="webp" xsi:type="string">webp</item>
                 <item name="svg" xsi:type="string">svg</item>
+                <item name="bmp" xsi:type="string">bmp</item>
+                <!-- Documents -->
+                <item name="pdf" xsi:type="string">pdf</item>
+                <item name="doc" xsi:type="string">doc</item>
+                <item name="docx" xsi:type="string">docx</item>
+                <item name="docm" xsi:type="string">docm</item>
+                <item name="odt" xsi:type="string">odt</item>
+                <item name="csv" xsi:type="string">csv</item>
+                <item name="txt" xsi:type="string">txt</item>
+                <item name="xml" xsi:type="string">xml</item>
+                <item name="xls" xsi:type="string">xls</item>
+                <item name="xlsx" xsi:type="string">xlsx</item>
+                <item name="ods" xsi:type="string">ods</item>
+                <!-- Archives -->
+                <item name="zip" xsi:type="string">zip</item>
+                <item name="tar" xsi:type="string">tar</item>
+                <!-- Audio -->
+                <item name="mp3" xsi:type="string">mp3</item>
+                <!-- Video -->
+                <item name="mp4" xsi:type="string">mp4</item>
+                <item name="webm" xsi:type="string">webm</item>
+                <item name="ogg" xsi:type="string">ogg</item>
+                <item name="mov" xsi:type="string">mov</item>
+                <item name="avi" xsi:type="string">avi</item>
+                <item name="wmv" xsi:type="string">wmv</item>
+                <item name="swf" xsi:type="string">swf</item>
+                <item name="rm" xsi:type="string">rm</item>
+                <!-- Calendar -->
                 <item name="ics" xsi:type="string">ics</item>
             </argument>
         </arguments>
