@@ -61,6 +61,7 @@ class ProtectedExtensions implements DataPatchInterface, PatchRevertableInterfac
             'default'
         );
         $this->moduleDataSetup->getConnection()->endSetup();
+        return $this;
     }
 
     /**
