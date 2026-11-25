@@ -7,7 +7,10 @@
             <module name="Magento_Store"/>
             <module name="Magento_MediaGalleryUi"/>
             <module name="Magento_MediaGalleryIntegration"/>
-            <module name="Magento_MediaGallerySyncroization"/>
+            <module name="Magento_MediaGalleryApi"/>
+            <module name="Magento_MediaGallerySynchronizationApi"/>
+            <module name="Magento_MediaGallerySynchronization"/>
+            <module name="Magento_MediaGalleryRenditions"/>
         </sequence>
     </module>
 </config>

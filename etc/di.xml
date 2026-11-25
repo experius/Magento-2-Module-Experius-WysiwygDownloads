@@ -13,4 +13,14 @@
     <type name="Magento\Cms\Model\Wysiwyg\Images\Storage">
         <plugin name="Experius_WysiwygDownloads_Plugin_Magento_Cms_Model_Wysiwyg_Images_Storage" type="Experius\WysiwygDownloads\Plugin\Magento\Cms\Model\Wysiwyg\Images\Storage" sortOrder="10" disabled="false"/>
     </type>
+    <type name="Magento\MediaGallerySynchronizationApi\Model\CreateAssetFromFileInterface">
+        <plugin name="Experius_WysiwygDownloads_Plugin_Magento_MediaGallerySynchronization_Model_CreateAssetFromFile"
+                type="Experius\WysiwygDownloads\Plugin\Magento\MediaGallerySynchronization\Model\CreateAssetFromFile"
+                sortOrder="1"/>
+    </type>
+    <type name="Magento\MediaGalleryRenditionsApi\Api\GenerateRenditionsInterface">
+        <plugin name="Experius_WysiwygDownloads_Plugin_Magento_MediaGalleryRenditions_Model_GenerateRenditions"
+                type="Experius\WysiwygDownloads\Plugin\Magento\MediaGalleryRenditions\Model\GenerateRenditions"
+                sortOrder="1"/>
+    </type>
 </config>

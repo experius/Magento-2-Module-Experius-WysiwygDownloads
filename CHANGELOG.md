@@ -1,3 +1,7 @@
+## 1.3.1 (2026-11-25)
+
+*  [BUGFIX][NEND-1829] Register PDF and other non-image files from the Media Gallery as assets on Magento 2.4.9 / PHP 8.3. Width and height are 0, the mime type comes from the file, renditions skip documents, and the PDF icon matches application/pdf.
+
 ## 1.2.0 (2023-10-27)
 
 [View Release](git@github.com:experius/Magento-2-Module-Experius-WysiwygDownloads.git/commits/tag/1.2.0)
